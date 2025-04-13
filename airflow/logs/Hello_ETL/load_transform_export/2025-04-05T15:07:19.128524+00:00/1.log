@@ -1,0 +1,21 @@
+[2025-04-05 20:38:21,974] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: Hello_ETL.load_transform_export 2025-04-05T15:07:19.128524+00:00 [queued]>
+[2025-04-05 20:38:21,991] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: Hello_ETL.load_transform_export 2025-04-05T15:07:19.128524+00:00 [queued]>
+[2025-04-05 20:38:21,991] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-05 20:38:21,991] {taskinstance.py:881} INFO - Starting attempt 1 of 1
+[2025-04-05 20:38:21,991] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-05 20:38:21,997] {taskinstance.py:901} INFO - Executing <Task(BashOperator): load_transform_export> on 2025-04-05T15:07:19.128524+00:00
+[2025-04-05 20:38:22,000] {standard_task_runner.py:54} INFO - Started process 63764 to run task
+[2025-04-05 20:38:22,026] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'Hello_ETL', 'load_transform_export', '2025-04-05T15:07:19.128524+00:00', '--job_id', '33', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/simplest_dag.py', '--cfg_path', '/tmp/tmpyyvi5dxp']
+[2025-04-05 20:38:22,027] {standard_task_runner.py:78} INFO - Job 33: Subtask load_transform_export
+[2025-04-05 20:38:22,057] {logging_mixin.py:120} INFO - Running <TaskInstance: Hello_ETL.load_transform_export 2025-04-05T15:07:19.128524+00:00 [running]> on host ROGZephyrusG14GA401QHGA401QH2abf6ae9
+[2025-04-05 20:38:22,078] {bash_operator.py:113} INFO - Tmp dir root location: 
+ /tmp
+[2025-04-05 20:38:22,079] {bash_operator.py:134} INFO - Temporary script location: /tmp/airflowtmpr6yw1eyu/load_transform_export1iykrkpu
+[2025-04-05 20:38:22,080] {bash_operator.py:146} INFO - Running command: bash /home/parveensharma/Documents/PythonPractice/Airflow_ETL/wrapper.sh 
+[2025-04-05 20:38:22,086] {bash_operator.py:153} INFO - Output:
+[2025-04-05 20:38:22,343] {bash_operator.py:157} INFO - Data written to /var/tmp/etl_output_20250405_20:38:22.csv
+[2025-04-05 20:38:22,380] {bash_operator.py:159} INFO - Command exited with return code 0
+[2025-04-05 20:38:22,395] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=Hello_ETL, task_id=load_transform_export, execution_date=20250405T150719, start_date=20250405T150821, end_date=20250405T150822
+[2025-04-05 20:38:26,990] {local_task_job.py:102} INFO - Task exited with return code 0

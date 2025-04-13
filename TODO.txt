@@ -1,0 +1,16 @@
+Things I expect to learn today:
+1. Dag with multiple components. -> done
+2. Dag that can be triggered with an API and no schedule.
+3. Dag which can be triggered from UI.
+4. Airflow configurations. -> xcoms & macros done.
+5. Refresh pandas and numpy skills.
+
+Helpful packages:
+tempfile
+
+Main Project:
+Extract: Pull stock data from kite or kotak securities.
+Transform: Calculate technical indicator values and add it in dataframe.
+Load: Consider github or maybe some other place where I should load it. Later have a functionality to send events over firebase cloud notification.
+
+Project idea -> create an ETL process that pulls the data 1m,5m stock data every 15 minutes and process it and calculate different indicator values and store it for a list of stocks.
